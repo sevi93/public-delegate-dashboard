@@ -1031,37 +1031,7 @@
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": [
-      {
-        "current": {
-          "selected": true,
-          "text": "host.docker.internal:9103",
-          "value": "host.docker.internal:9103"
-        },
-        "datasource": {
-          "type": "prometheus",
-          "uid": "PBFA97CFB590B2093"
-        },
-        "definition": "label_values(process_virtual_memory_bytes,instance)",
-        "hide": 0,
-        "includeAll": false,
-        "multi": false,
-        "name": "instance",
-        "options": [],
-        "query": {
-          "query": "label_values(process_virtual_memory_bytes,instance)",
-          "refId": "Prometheus-instance-Variable-Query"
-        },
-        "refresh": 1,
-        "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
-        "tagValuesQuery": "",
-        "tagsQuery": "",
-        "type": "query",
-        "useTags": false
-      }
-    ]
+    "list": []
   },
   "time": {
     "from": "now-1h",
@@ -1084,6 +1054,6 @@
   "timezone": "",
   "title": "Public delegate dashboard",
   "uid": "cZzg_h8nk",
-  "version": 7,
+  "version": 9,
   "weekStart": ""
 }
