@@ -1,7 +1,7 @@
 version: "3.4"
 services:
   grafana:
-    image: grafana/grafana:8.3.2
+    image: grafana/grafana:8.4.5
     container_name: ${COMPOSE_PROJECT_NAME}_grafana
     restart: unless-stopped
     environment:

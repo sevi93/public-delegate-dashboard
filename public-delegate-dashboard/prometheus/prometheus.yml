@@ -3,10 +3,6 @@ global:
   evaluation_interval: 60s
 
 scrape_configs:
-  - job_name: 'prometheus'
-    static_configs:
-      - targets: ['localhost:9091']
-
   - job_name: 'tbw'
     static_configs:
-      - targets: ['host.docker.internal:9104']
+      - targets: ['changeme:9104']
