@@ -22,7 +22,6 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "id": 3,
-  "iteration": 1649671922049,
   "links": [
     {
       "asDropdown": false,
@@ -70,7 +69,7 @@
         "mode": "html"
       },
       "pluginVersion": "8.3.2",
-      "title": "Reward calculator",
+      "title": "Reward simulator",
       "transparent": true,
       "type": "text"
     },
@@ -213,7 +212,7 @@
           "expr": "sum(tbw_delegate{delegate=\"block_reward\"}) / sum(tbw_config{param=\"atomic\"})",
           "hide": false,
           "interval": "",
-          "legendFormat": "Delegate rank",
+          "legendFormat": "Token",
           "refId": "B"
         }
       ],
@@ -283,7 +282,7 @@
       "type": "stat"
     },
     {
-      "description": "",
+      "description": "Amount of vote token",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -352,11 +351,11 @@
           "refId": "A"
         }
       ],
-      "title": "Total votes tokens",
+      "title": "Vote weight",
       "type": "stat"
     },
     {
-      "description": "Reward simulation per balance divided in two parts :\n - new_vote: False,  if already voting\n - new_vote: True,  if this is for a new vote\n",
+      "description": "Reward simulation per balance divided in two parts :\n - new_vote: False,  if already voting\n - new_vote: True,  if this is for a new vote\n\nNew vote caculate the newer position of the delegate in order to adjust the DynamicReward",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -421,7 +420,7 @@
           "refId": "A"
         }
       ],
-      "title": "Delegate reward calculator",
+      "title": "Voters rewards simulator",
       "transformations": [
         {
           "id": "organize",
@@ -610,7 +609,7 @@
           "hide": false,
           "instant": false,
           "interval": "",
-          "legendFormat": "voters",
+          "legendFormat": "Token",
           "refId": "A"
         }
       ],
@@ -683,7 +682,7 @@
           "exemplar": true,
           "expr": "tbw_payout{payout=\"block_before_payout\"}",
           "interval": "",
-          "legendFormat": "",
+          "legendFormat": "blocks",
           "refId": "A"
         }
       ],
@@ -691,7 +690,7 @@
       "type": "stat"
     },
     {
-      "description": "Number of processed blocks between two payout",
+      "description": "Number of processed blocks between two payouts",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -755,7 +754,7 @@
           "exemplar": true,
           "expr": "tbw_config{param=\"payout_interval_block\"}",
           "interval": "",
-          "legendFormat": "",
+          "legendFormat": "Blocks",
           "refId": "A"
         }
       ],
@@ -763,7 +762,7 @@
       "type": "stat"
     },
     {
-      "description": "Total of distributed rewards",
+      "description": "Total of distributed rewards to voters",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -828,11 +827,11 @@
           "expr": "sum(tbw_payout{payout=\"total_voters_rewards\"}) / sum(tbw_config{param=\"atomic\"})",
           "hide": false,
           "interval": "",
-          "legendFormat": "Voters",
+          "legendFormat": "token",
           "refId": "B"
         }
       ],
-      "title": "Total distributed rewards",
+      "title": "Total voters rewards",
       "type": "stat"
     },
     {
@@ -1054,6 +1053,6 @@
   "timezone": "",
   "title": "Public delegate dashboard",
   "uid": "cZzg_h8nk",
-  "version": 9,
+  "version": 11,
   "weekStart": ""
 }
