@@ -1025,7 +1025,7 @@
       "type": "table"
     }
   ],
-  "refresh": "10s",
+  "refresh": "5m",
   "schemaVersion": 33,
   "style": "dark",
   "tags": [],
@@ -1053,6 +1053,6 @@
   "timezone": "",
   "title": "Public delegate dashboard",
   "uid": "cZzg_h8nk",
-  "version": 11,
+  "version": 12,
   "weekStart": ""
 }
