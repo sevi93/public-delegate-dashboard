@@ -400,7 +400,7 @@
         "sortBy": [
           {
             "desc": false,
-            "displayName": "Balance"
+            "displayName": "New vote"
           }
         ]
       },
@@ -433,18 +433,21 @@
               "job": true
             },
             "indexByName": {
-              "Time": 0,
-              "Value #A": 3,
-              "__name__": 1,
-              "balance": 2,
-              "blk_reward": 4,
-              "instance": 5,
-              "job": 6,
-              "payout_interval_reward": 7
+              "Time": 4,
+              "Value #A": 0,
+              "__name__": 5,
+              "blk_reward": 1,
+              "instance": 6,
+              "job": 7,
+              "new_vote": 3,
+              "payout_interval_reward": 2
             },
             "renameByName": {
               "Value": "Balance",
               "Value #A": "Balance",
+              "blk_reward": "Reward per block",
+              "new_vote": "New vote",
+              "payout_interval_reward": "Reward per payout interval",
               "voters": "Voter"
             }
           }
@@ -918,6 +921,17 @@
               "voters": "Voter"
             }
           }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "field": "Balance"
+              }
+            ]
+          }
         }
       ],
       "type": "table"
@@ -1053,6 +1067,6 @@
   "timezone": "",
   "title": "Public delegate dashboard",
   "uid": "cZzg_h8nk",
-  "version": 14,
+  "version": 16,
   "weekStart": ""
 }
