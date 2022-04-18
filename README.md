@@ -1,6 +1,6 @@
 # public-delegate-dashboard
 
-This repository contains the deployment tools of public dashboard version, of [tbw_node_monitoring(https://github.com/sevi93/tbw_node_monitoring)]
+This repository contains the deployment tools of public dashboard version, of [tbw_node_monitoring](https://github.com/sevi93/tbw_node_monitoring)
 
 This tool has a dependency with [tbw_exporter_api](https://github.com/sevi93/tbw_exporter_api) in order to display all the TBW and Network metrics on the dashboard
 
