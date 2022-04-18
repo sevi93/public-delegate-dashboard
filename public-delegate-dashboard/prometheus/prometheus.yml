@@ -5,4 +5,4 @@ global:
 scrape_configs:
   - job_name: 'tbw'
     static_configs:
-      - targets: ['changeme:9104']
+      - targets: ['TBW_EXPORTER_API:9104']
