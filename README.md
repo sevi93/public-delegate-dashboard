@@ -5,9 +5,10 @@ This repository contains the deployment tools of public dashboard version, of [t
 This tool has a dependency with [tbw_exporter_api](https://github.com/sevi93/tbw_exporter_api) in order to display all the TBW and Network metrics on the dashboard
 
 # Configuration
-.
+
+Change `TBW_EXPORTER_API` with the tbw_exporter_api IP endpoint in :
+
 ```
-Change TBW_EXPORTER_API with the tbw_exporter_api IP endpoint in
 public-delegate-dashboard/prometheus/prometheus.yml
 ````
 
